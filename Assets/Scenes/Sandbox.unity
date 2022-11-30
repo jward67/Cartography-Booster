@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130228687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.76, y: 3.92, z: 0}
+  m_LocalPosition: {x: 12.7, y: 2.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -233,8 +233,8 @@ GameObject:
   - component: {fileID: 280329929}
   - component: {fileID: 280329928}
   m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
+  m_Name: Fuel
+  m_TagString: Fuel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,7 +272,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04cdc50072d6a0d428ce73773d8db976, type: 2}
+  - {fileID: 2100000, guid: 475f839e025caae419a81c26e4264d01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -310,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280329927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.99, y: 5.88, z: 0}
+  m_LocalPosition: {x: -5.12, y: 6.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -868,6 +868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 2975694969945073090, guid: 3f7a1ab88e8db2b48b49c2354dd218fd, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 2975694969945073150, guid: 3f7a1ab88e8db2b48b49c2354dd218fd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -990,9 +994,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 339202310, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
-      propertyPath: rotationThrust
-      value: 115
+    - target: {fileID: 317517928, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6333868298498273898, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
       propertyPath: m_RootOrder
@@ -1041,18 +1045,6 @@ PrefabInstance:
     - target: {fileID: 6333868298498273902, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
       propertyPath: m_Name
       value: Rocket (Player)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544447106823356776, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
-      propertyPath: m_Drag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544447106823356776, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.0375
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544447106823356776, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
-      propertyPath: m_Constraints
-      value: 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5fb6faad53aa540b65aaf9437a48d9, type: 3}
@@ -1123,6 +1115,10 @@ PrefabInstance:
     - target: {fileID: 9148192365075527466, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
       propertyPath: m_Name
       value: Landing Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148192365075527466, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 9148192365075527470, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
       propertyPath: m_RootOrder
