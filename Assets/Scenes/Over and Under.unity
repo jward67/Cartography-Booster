@@ -771,10 +771,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
-    - target: {fileID: 2975694969945073090, guid: 3f7a1ab88e8db2b48b49c2354dd218fd, type: 3}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
     - target: {fileID: 2975694969945073150, guid: 3f7a1ab88e8db2b48b49c2354dd218fd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1014,10 +1010,6 @@ PrefabInstance:
     - target: {fileID: 9148192365075527466, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
       propertyPath: m_Name
       value: Landing Pad
-      objectReference: {fileID: 0}
-    - target: {fileID: 9148192365075527466, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
-      propertyPath: m_TagString
-      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 9148192365075527470, guid: e86dffca848bafd44b65b223e9cbca3f, type: 3}
       propertyPath: m_RootOrder
