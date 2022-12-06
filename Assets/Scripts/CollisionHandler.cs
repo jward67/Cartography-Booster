@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 1f;
-    [SerializeField] AudioClip successSFX, rocketCrashSFX;
+    [SerializeField] AudioClip success, crash;
 
+    [SerializeField] ParticleSystem successParticles, crashParticles;
+
+    Movement movement;
     AudioSource audioSource;
 
     bool isTransitioning = false;
 
     void Start() 
     {
+        movement = GetComponent<Movement>();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -41,10 +45,11 @@ public class CollisionHandler : MonoBehaviour
     void StartSuccessSequence()
     {
         isTransitioning = true;
+        StopRocketBoosters();
         audioSource.Stop();
-        audioSource.PlayOneShot(successSFX);
-        // TODO: add particle effect upon success
-        GetComponent<Movement>().enabled = false;
+        audioSource.PlayOneShot(success);
+        successParticles.Play();
+        movement.enabled = false;
 
         Invoke("LoadNextLevel", levelLoadDelay);
     }
@@ -52,11 +57,19 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {
         isTransitioning = true;
+        StopRocketBoosters();
         audioSource.Stop();
-        audioSource.PlayOneShot(rocketCrashSFX);
-        // TODO: add particle effect upon crash
-        GetComponent<Movement>().enabled = false;
+        audioSource.PlayOneShot(crash);
+        crashParticles.Play();
+        movement.enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
+    }
+
+    void StopRocketBoosters()
+    {
+        movement.MainEngineParticles().Stop();
+        movement.LeftEngineParticles().Stop();
+        movement.RightEngineParticles().Stop();
     }
 
     void LoadNextLevel()
