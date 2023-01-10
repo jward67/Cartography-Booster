@@ -7,11 +7,26 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Over.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: e4e221b7d945eaf42a0977635fc3bf0c
   - enabled: 1
     path: Assets/Scenes/Under.unity
     guid: ed25a70b287b57743a53eda5a9e11cfa
   - enabled: 1
     path: Assets/Scenes/Over and Under.unity
     guid: 3e3431a648fe58d41aae6f7729a8710d
+  - enabled: 1
+    path: Assets/Scenes/Corridor.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Passing By.unity
+    guid: d2941b74a27ddf14caf31087bfd0b699
+  - enabled: 1
+    path: Assets/Scenes/Through The Gap.unity
+    guid: d663138a06372c143880f459b382d224
+  - enabled: 1
+    path: Assets/Scenes/Malfunction.unity
+    guid: bcf645b34dcc98642a4a51083cb1ba6d
+  - enabled: 1
+    path: Assets/Scenes/Laxis Orbituli.unity
+    guid: bf3f919e736d460439af007f2cc08b33
   m_configObjects: {}
